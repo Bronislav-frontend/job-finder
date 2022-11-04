@@ -13,7 +13,9 @@ const Home = ({ jobs }: IJobs) => {
         <meta charSet="utf-8" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <JobsList jobs={jobs} />
+      <main className="bg-[#FAFBFF]">
+        <JobsList jobs={jobs} />
+      </main>
     </>
   );
 };
