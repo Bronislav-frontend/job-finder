@@ -30,3 +30,7 @@ export interface IContext {
   jobInfo: IJobDetails;
   setJobInfo: React.Dispatch<React.SetStateAction<IJobDetails | null>>;
 }
+
+export interface IBaseLayoutProps {
+  children?: React.ReactNode;
+}

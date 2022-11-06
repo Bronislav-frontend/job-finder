@@ -29,7 +29,7 @@ const JobItem = ({ info }: IInfo) => {
           />
         </div>
         <div className="flex-1 xl:flex xl:flex-row-reverse xl:justify-between">
-          <div className="flex justify-between mb-3.5">
+          <div className="flex justify-between mb-3.5 items-center xl:items-stretch xl:mb-0">
             <div className="xl:flex xl:items-center xl:mr-[32px]">
               <Image
                 src={starsIcon}
