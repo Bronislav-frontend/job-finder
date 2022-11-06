@@ -1,20 +1,23 @@
 import Router from "next/router";
 import Image from "next/image";
-import moment from "moment";
 import { useContext } from "react";
+import calculateWhenPosted from "../helpers/calculateWhenPosted";
 import { IJobDetails, IInfo } from "../interfaces/interfaces";
 import JobInfoContext from "../context/JobInfoContext";
 import locationIcon from "../assets/icons/location.png";
 import flagIcon from "../assets/icons/flag.png";
 import starsIcon from "../assets/icons/rating.png";
 
+interface IInfo {
+  info: IJobDetails;
+}
+
 const JobItem = ({ info }: IInfo) => {
   const context = useContext(JobInfoContext);
   const handleChangeJobDetails = (info: IJobDetails) => {
     context.setJobInfo(info);
   };
-  const dateOfCreation = info.createdAt.split("T")[0];
-  const dateTimeAgo = moment(new Date(dateOfCreation)).fromNow();
+  console.log(info);
 
   return (
     <li className="mx-auto px-[16px] pt-[17px] pb-[27px] rounded-lg bg-[#EFF0F5] shadow-mob hover:shadow-hov focus:shadow-hov xl:px-[16px] xl:py-[24px] xl:bg-white xl:shadow-hug xl:max-w-[1400px]">
@@ -46,7 +49,7 @@ const JobItem = ({ info }: IInfo) => {
                 className="hidden xl:block xl:w-4 xl:h-5 xl:cursor-pointer "
               />
               <p className="text-[#878D9D] tracking-[0.206667px] text-post font-light xl:tracking-[0.23619px] xl:text-base xl:whitespace-nowrap">
-                Posted {dateTimeAgo}
+                Posted {calculateWhenPosted(info.createdAt)}
               </p>
             </div>
           </div>

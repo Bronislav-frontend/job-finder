@@ -3,6 +3,7 @@ import { IJobs } from "../interfaces/interfaces";
 const AUTH_TOKEN = "Bearer wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu";
 
 const Home = ({ jobs }: IJobs) => {
+  console.log(jobs);
   return (
     <>
       <main>

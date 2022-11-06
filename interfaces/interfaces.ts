@@ -4,7 +4,7 @@ export interface IJobDetails {
   createdAt: string;
   description: string;
   email: string;
-  employmentType: string[];
+  employment_type: string[];
   id: string;
   location: {
     lat: number;
@@ -20,10 +20,6 @@ export interface IJobDetails {
 
 export interface IJobs {
   jobs: IJobDetails[];
-}
-
-export interface IInfo {
-  info: IJobDetails;
 }
 
 export interface IContext {
