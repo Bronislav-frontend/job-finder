@@ -2,7 +2,7 @@ import Router from "next/router";
 import Image from "next/image";
 import { useContext } from "react";
 import calculateWhenPosted from "../helpers/calculateWhenPosted";
-import { IJobDetails, IInfo } from "../interfaces/interfaces";
+import { IJobDetails } from "../interfaces/interfaces";
 import JobInfoContext from "../context/JobInfoContext";
 import locationIcon from "../assets/icons/location.png";
 import flagIcon from "../assets/icons/flag.png";
@@ -17,7 +17,6 @@ const JobItem = ({ info }: IInfo) => {
   const handleChangeJobDetails = (info: IJobDetails) => {
     context.setJobInfo(info);
   };
-  console.log(info);
 
   return (
     <li className="mx-auto px-[16px] pt-[17px] pb-[27px] rounded-lg bg-[#EFF0F5] shadow-mob hover:shadow-hov focus:shadow-hov xl:px-[16px] xl:py-[24px] xl:bg-white xl:shadow-hug xl:max-w-[1400px]">

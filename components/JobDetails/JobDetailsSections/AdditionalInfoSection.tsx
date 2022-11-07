@@ -15,7 +15,7 @@ const AdditionalInfoSection = ({
       <p className="text-base -tracking-[-0.5625px] text-descr mb-[10px] mt-[15px] xl:text-base xl:text-[#3A4562]">
         Employment type
       </p>
-      <ul className="grid grid-flow-col gap-2 mb-[22px]">
+      <ul className="grid grid-cols-3 gap-2 mb-[22px]">
         {employment_type.length !== 0 &&
           employment_type.map((type, index) => (
             <li
@@ -31,7 +31,7 @@ const AdditionalInfoSection = ({
       <p className="text-base -tracking-[-0.5625px] text-descr mb-[10px] mt-[15px] xl:text-base xl:text-[#3A4562]">
         Benefits
       </p>
-      <ul className="grid grid-flow-col gap-2 mb-[22px]">
+      <ul className="grid grid-cols-3	gap-2 mb-[22px]">
         {benefits.length !== 0 &&
           benefits.map((benefit, index) => (
             <li

@@ -12,7 +12,7 @@ const ImageSection = ({ pictures }: IImageSectionProps) => {
           <h2 className="border-b-[1px] text-det text-[#3A4562] tracking-[-0.413] font-bold pb-[10px] mb-[20px]">
             Attached images
           </h2>
-          <ul className="grid gap-2.5 grid-cols-2 pb-[60px] xl:grid-cols-3 xl:gap-[10px] xl:pb-[98px]">
+          <ul className="grid gap-2.5 grid-cols-2 pb-[60px] xl:grid-cols-3 xl:gap-[10px] xl:pb-[140px]">
             {pictures.map((picture, index) => (
               <li key={index} className="flex justify-center">
                 <Image

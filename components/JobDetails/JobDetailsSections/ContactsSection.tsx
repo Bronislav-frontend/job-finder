@@ -15,7 +15,7 @@ const ContactsSection = ({
   email,
 }: IContactsSectionProps) => {
   return (
-    <section className="xl:absolute xl:top-20 xl:right-20">
+    <section>
       <h2 className="border-b-[1px] text-det text-[#3A4562] tracking-[-0.413] font-bold pb-[10px] mb-[20px] xl:hidden">
         Contacts
       </h2>

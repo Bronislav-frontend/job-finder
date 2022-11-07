@@ -3,7 +3,7 @@ import calculateWhenPosted from "../../../helpers/calculateWhenPosted";
 import icons from "../../../assets/icons";
 import formatTheSalary from "../../../helpers/formatTheSalary";
 
-interface JobDescriptionProps {
+interface IJobDescriptionProps {
   title: string;
   createdAt: string;
   salary: string;
@@ -17,7 +17,7 @@ const JobDescriptionSection = ({
   salary,
   description,
   benefits,
-}: JobDescriptionProps) => {
+}: IJobDescriptionProps) => {
   return (
     <section>
       <article className="pb-[135px] xl:pt-[39px] xl:pb-[86px]">
