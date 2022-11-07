@@ -13,10 +13,7 @@ interface IInfo {
 }
 
 const JobItem = ({ info }: IInfo) => {
-  const context = useContext(JobInfoContext);
-  const handleChangeJobDetails = (info: IJobDetails) => {
-    context.setJobInfo(info);
-  };
+  const { handleAddJobInfo } = useContext(JobInfoContext);
 
   return (
     <li className="mx-auto px-[16px] pt-[17px] pb-[27px] rounded-lg bg-[#EFF0F5] shadow-mob hover:shadow-hov focus:shadow-hov xl:px-[16px] xl:py-[24px] xl:bg-white xl:shadow-hug xl:max-w-[1400px]">
@@ -56,7 +53,7 @@ const JobItem = ({ info }: IInfo) => {
             <a
               className="text-mob font-normal -tracking-[0.5625px] cursor-pointer text-[#3a4562] xl:-tracking-[0.625px] xl:text-lg xl:font-bold"
               onClick={() => {
-                handleChangeJobDetails(info);
+                handleAddJobInfo(info);
                 Router.push(`/job-details/${info.name}`);
               }}
             >

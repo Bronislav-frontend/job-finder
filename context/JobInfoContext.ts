@@ -1,6 +1,13 @@
 import { createContext } from "react";
-import { IContext } from "../interfaces/interfaces";
+import { IJobDetails } from "../interfaces/interfaces";
 
-const JobInfoContext = createContext<IContext | null>(null);
+export type JobInfoContextProps = {
+  jobInfoState: IJobDetails;
+  handleAddJobInfo: (jobInfo: IJobDetails) => void;
+};
+
+const JobInfoContext = createContext<JobInfoContextProps>(
+  {} as JobInfoContextProps
+);
 
 export default JobInfoContext;

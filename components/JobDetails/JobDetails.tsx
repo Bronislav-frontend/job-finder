@@ -10,7 +10,7 @@ import ContactsSection from "./JobDetailsSections/ContactsSection";
 import icons from "../../assets/icons";
 
 const JobDetails = () => {
-  const context = useContext(JobInfoContext);
+  const { jobInfoState } = useContext(JobInfoContext);
   const {
     title,
     salary,
@@ -23,9 +23,9 @@ const JobDetails = () => {
     email,
     address,
     createdAt,
-  } = context.jobInfo;
+  } = jobInfoState;
 
-  const linkClickHandler = () => Router.push("/");
+  const handleButtonClick = () => Router.push("/");
 
   return (
     <section className="xl:flex mx-auto px-[15px] xl:py-14 xl:max-w-[1258px]">
@@ -47,7 +47,7 @@ const JobDetails = () => {
         </div>
         <div className="relative">
           <button
-            onClick={linkClickHandler}
+            onClick={handleButtonClick}
             className="hidden xl:flex xl:items-center xl:rounded-lg xl:bg-[#384564]/[0.14] px-6 py-4 absolute -left-[60px] -top-[80px]"
           >
             <Image
