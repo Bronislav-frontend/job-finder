@@ -16,8 +16,8 @@ const JobItem = ({ info }: IInfo) => {
   const { handleAddJobInfo } = useContext(JobInfoContext);
 
   return (
-    <li className="mx-auto px-[16px] pt-[17px] pb-[27px] rounded-lg bg-[#EFF0F5] shadow-mob hover:shadow-hov focus:shadow-hov xl:px-[16px] xl:py-[24px] xl:bg-white xl:shadow-hug xl:max-w-[1400px]">
-      <div className="flex items-center xl:items-start">
+    <li className="mx-auto px-[16px] pt-[17px] pb-[27px] rounded-lg bg-[#EFF0F5] shadow-mob hover:shadow-hov focus:shadow-hov xl:px-[16px] xl:py-[24px] xl:bg-white xl:shadow-hug xl:max-w-[1400px] group item">
+      <div className="flex items-center xl:items-start ">
         <div className="mr-[19px] xl:mr-[26px]">
           <img
             src={info.pictures[0]}
@@ -33,7 +33,7 @@ const JobItem = ({ info }: IInfo) => {
               <Image
                 src={starsIcon}
                 alt="rating icon"
-                className="w-[54px] h-[10px] xl:w-[96px] xl:h-[18px]"
+                className="w-[54px] h-[10px] xl:w-[96px] xl:h-[18px] xl:hidden xl:group-hover:block"
               />
             </div>
             <div className="xl:flex xl:flex-1 xl:flex-col xl:justify-between xl:items-end">

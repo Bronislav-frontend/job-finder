@@ -5,6 +5,8 @@ import locationIcon from "./location.png";
 import ratingIcon from "./rating.png";
 import shareIcon from "./shape.png";
 import starsIcon from "./star.png";
+import arrowLeft from "./arrow-left.png";
+import arrowRight from "./arrow-right.png";
 
 const icons = {
   arrowIcon,
@@ -14,6 +16,8 @@ const icons = {
   ratingIcon,
   shareIcon,
   starsIcon,
+  arrowLeft,
+  arrowRight,
 };
 
 export default icons;
