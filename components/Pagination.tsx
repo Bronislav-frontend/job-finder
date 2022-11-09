@@ -26,12 +26,12 @@ const Pagination = () => {
         </li>
         <li className="flex flex-1 justify-center font-bold tracking-[1.73px] text-lg text-[#70778B]">
           <button className=" flex-1 border-b-[2px] border-transparent focus:border-[#5876C5] focus:text-[#5876C5]">
-            14
+            5
           </button>
         </li>
         <li className="flex flex-1 justify-center font-bold tracking-[1.73px] text-lg text-[#70778B]">
           <button className=" flex-1 border-b-[2px] border-transparent focus:border-[#5876C5] focus:text-[#5876C5]">
-            5
+            14
           </button>
         </li>
         <li className="flex flex-1 justify-center font-bold tracking-[1.73px] text-lg text-[#70778B]">
