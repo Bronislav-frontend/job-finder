@@ -1,6 +1,5 @@
 import JobsList from "../components/JobsList";
 import { IJobs } from "../interfaces/interfaces";
-import Pagination from "../components/Pagination";
 const AUTH_TOKEN = "Bearer wm3gg940gy0xek1ld98uaizhz83c6rh2sir9f9fu";
 
 const Home = ({ jobs }: IJobs) => {
@@ -8,7 +7,6 @@ const Home = ({ jobs }: IJobs) => {
     <>
       <main className="bg-[#E6E9F2] xl:pt-[30px] xl:pb-16">
         <JobsList jobs={jobs} />
-        <Pagination />
       </main>
     </>
   );
